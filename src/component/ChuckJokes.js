@@ -3,6 +3,7 @@ import React, { Fragment, useState } from "react";
 export function GetChuckJokes() {
   const [fetchData, setFetchData] = useState("No Name Yet");
   // fetchSubmit();
+  // Notes from Intern Jacob: I tried to get this function to be called on page load but it keeps looping. Uncomment out the fetch submit to see this in action.
   function fetchSubmit() {
     let url = "http://api.icndb.com/jokes/random";
     fetch(url)
